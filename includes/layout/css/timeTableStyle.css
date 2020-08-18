@@ -1,0 +1,127 @@
+.leftNav ul li .active{
+  color: #ff4800;
+  padding-left: 20px;
+}
+.tableSatisfaction {
+  padding: 80px 0;
+}
+.tableSatisfaction >div{
+  margin-bottom: 20px;
+}
+.tableSatisfaction >div .question{
+  font-size: 27px;
+  color: #666;
+}
+.tableSatisfaction >div .radioButton{
+  display: flex;
+}
+.tableSatisfaction >div .radioButton >div{
+  padding: 0 30px 0 0;
+}
+.tableSatisfaction >div .radioButton >div input{
+  margin-right: 15px;
+}
+.tableSatisfaction >div .radioButton >div input:hover,
+.tableSatisfaction >div .radioButton >div label:hover{
+  cursor: pointer;
+}
+.tableSatisfaction >div .progress{
+  height: 12px;
+}
+.tableSatisfaction >div >div{
+  margin-bottom: 10px;
+}
+.tableSatisfaction >div .satisfied span {
+ color: #28a745;
+}
+.tableSatisfaction >div .unsatisfied span {
+ color: #dc3545;
+}
+.poll >div .pollQuestion {
+  font-size: 23px;
+  color: #ff4800;
+  margin-bottom: 35px;
+  position: relative;
+}
+.poll >div .pollQuestion:after{
+  content: "";
+  position: absolute;
+  top: 49px;
+  left: 80px;
+  height: 1px;
+  width: 200px;
+  background: #ff4800;
+}
+.poll >div .pollQuestion:before{
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 72px;
+  height: 1px;
+  width: 200px;
+  background: #ff4800;
+}
+.poll >div .pollContent{
+  font-size: 18px;
+  color: #666;
+}
+.poll >div .pollContent >div input:hover,
+.poll >div .pollContent >div label:hover{
+  cursor: pointer;
+}
+.poll >div .pollContent >div input{
+  margin-right: 20px;
+}
+.poll >div .createPoll{
+  color: #ff4800;
+  font-size: 23px;
+  text-align: center;
+  margin: 70px 0;
+  transition: all .3s ease-in-out;
+}
+.poll >div .createPoll:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*start footer */
+footer .about{
+  background-color: #f9f9f9;
+  margin-top: 100px;
+  padding: 20px 35px 20px 0;
+  font-size: 18px;
+  text-align: right;
+  position: relative;
+}
+footer .about a{
+  font-family: Raleway Medium;
+  color: #ff4800;
+  margin-bottom: -19px;
+  text-decoration: none;
+  position: relative;
+}
+footer .about a:after{
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  width: 45px;
+  height: 2px;
+  background-color: #FF4800;
+}
+footer .about a:before{
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 27px;
+  width: 45px;
+  height: 2px;
+  background-color: #FF4800;
+}
+.copy-right {
+  padding: 20px;
+  text-align: center;
+}
+.copy-right span {
+  color: #ff4800;
+}
+/*end footer*/

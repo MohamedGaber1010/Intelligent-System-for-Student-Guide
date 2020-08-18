@@ -1,0 +1,125 @@
+.profileHeader{
+  margin-top: 130px;
+  padding-top: 0;
+}
+.profileHeader .profilePicture{
+  position: relative;
+  padding: 0;
+}
+
+.profileHeader .profilePicture .coverImage img{
+  width: 100%;
+}
+.profileHeader .profilePicture .userImage{
+  margin: 0 auto;
+  margin-top: -40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profileHeader .profilePicture .userImage img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profilePicture >button{
+  border: none;
+  width: 100px;
+  display:  block;
+  margin: -25px auto 0 53%;
+  background: none;
+  color: #CCC;
+  cursor: pointer;
+}
+.profilePicture >button i{
+  font-size: 18px;
+  color: #ff4800;
+}
+.profileHeader .profilePicture .userInfo{
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+.profileHeader .profilePicture .userInfo p{
+  font-weight: bold;
+}
+.profileHeader .profilePicture .moreInfo{
+  text-align: center;
+}
+.profileHeader .profilePicture .moreInfo p{
+  padding: 10px;
+}
+button.seeMore{
+  display: block;
+  background: none;
+  border: none;
+  color: #ff4800;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.userActivities{
+  padding: 20px 0;
+  box-shadow: 0 4px 9px 0 rgba(30,59,91,0.1);
+  background: #f7f8fc;
+  margin: 120px;
+}
+.userActivities h4{
+  margin: 20px;
+}
+.userActivities .activity{
+  margin: 20px 0;
+}
+.userActivities .activity .activityImage img{
+  width: 100%;
+  border-radius: 7px;
+}
+.userActivities .activity .ActivityName{
+  padding: 10px 20px;
+}
+.userActivities .activity .ActivityName h5{
+  text-transform: capitalize;
+}
+.userActivities .activity .ActivityName p{
+  margin: 15px 0;
+}
+.userSkills{
+  margin: 125px;
+  background: #f7f8fc;
+  box-shadow: 0 4px 9px 0 rgba(30,59,91,0.1);
+}
+.userSkills .row >div h4{
+  padding: 25px;
+}
+.userSkills .row >div ul{
+  margin: 20px 25px;
+}
+.userSkills .row >div ul >li{
+  padding: 10px;
+}
+.userSkills .row >div img{
+  width: 100%;
+  height: 100%;
+}
+.userPersonalInfo{
+  padding: 20px 0;
+}
+.userPersonalInfo h4{
+  padding: 25px 0;
+}
+.userPersonalInfo .row >div{
+  margin: 20px 0;
+}
+.userPersonalInfo .row >div img{
+  width: 40px;
+  height: 40px;
+}
+.userPersonalInfo .row >div p{
+  display: inline-block;
+  margin-left: 10px;
+}
+.userPersonalInfo .row >div i{
+  font-size: 25px;
+  color: #ff4800;
+}

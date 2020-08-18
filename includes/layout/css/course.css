@@ -1,0 +1,800 @@
+.coursecontent{
+  margin: 0 auto;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease;
+}
+.leftNav ul li .active{
+  color: #ff4800;
+  padding-left: 20px;
+}
+.coursesContent{
+  padding: 80px 15px;
+  width: 80%;
+  margin: 0 auto;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease;
+  margin-top: 125px;
+}
+
+.coursesContent .courseNav .nav{
+  position: relative;
+  width: 90%;
+}
+
+.courseNavRight .nav{
+  float: right;
+  margin: auto !important;
+  width: auto !important;
+}
+
+.lineTop{
+  position: absolute;
+  bottom: 27px;
+  margin-left: 30px;
+  height: 1px;
+  width: 480px;
+  background-color: #CCC;
+}
+.lineBottom{
+  position: absolute;
+  bottom: 24px;
+  margin-left: 40px;
+  height: 1px;
+  width: 480px;
+  background-color: #CCC;
+}
+.courseNavRight .nav .lineTop{
+  width: 398px !important;
+}
+.courseNavRight .nav .lineBottom{
+  width: 398px;
+}
+.coursesContent .courseNav .nav .nav-item{
+  margin: 30px 15px;
+  font-size: 22px;
+}
+
+.coursesContent .courseNav .nav .nav-item .nav-link{
+  color: #666;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+.coursesContent .courseNav .nav .nav-item .nav-link:hover{
+    color: #FF4800;
+}
+.coursesContent .courseNav .nav .nav-item .nav-link:hover:after{
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -3px;
+  background-color: #FF4800;
+  width: 80%;
+  height: 1px;
+  z-index: 2;
+}
+.coursesContent .courseNav .nav .nav-item .nav-link:hover:before{
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: -6px;
+  background-color: #FF4800;
+  width: 80%;
+  height: 1px;
+  z-index: 2;
+}
+.coursesContent .courseNav .nav .nav-item .active{
+  color: #FF4800 !important;
+}
+.coursesContent .courseNav .nav .nav-item .active:after{
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -3px;
+  background-color: #FF4800;
+  width: 80%;
+  height: 1px;
+  z-index: 2;
+}
+.coursesContent .courseNav .nav .nav-item .active:before{
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: -6px;
+  background-color: #FF4800;
+  width: 80%;
+  height: 1px;
+  z-index: 2;
+}
+.coursesContent .courseNav .nav .nav-item .active:hover:after{
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -3px;
+  background-color: #FF4800;
+  width: 80%;
+  height: 1px;
+  z-index: 2;
+}
+.coursesContent .courseNav .nav .nav-item .active:hover:before{
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: -6px;
+  background-color: #FF4800;
+  width: 80%;
+  height: 1px;
+  z-index: 2;
+}
+/*News post  copied from homePage.css */
+.courseNews .post{
+  border: 1px solid #ddd; margin-top: 40px
+}
+.courseNews .postContent{
+  padding: 45px
+}
+.courseNews .postContent span{
+  float: right;
+  margin-top: -30px
+}
+.courseNews .postContent img{
+  float: left;
+  margin-right: 20px
+}
+.courseNews .postComment img{
+  float: left;
+  margin-right: 20px
+}
+.courseNews .postComment{
+  padding: 22px 45px;
+  background-color: #f9f9f9;
+  margin-bottom: -15px;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+}
+.courseNews p{
+  margin-left: 58px;
+  margin-top: 15px;
+}
+.courseNews .writeComment{
+  margin-top: 20px
+}
+.courseNews .writeComment .write{
+  position: relative;
+  padding: 22px 45px;
+}
+.courseNews .writeComment .write input{
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px 65px;
+}
+.courseNews .writeComment .write img{
+  position: absolute;
+  left: 60px;
+  top: 32px;
+}
+.sheets
+{
+  margin: 5% 0 0 20%;
+}
+
+.sheets .row
+{
+  border-top: 1px solid #e7e7e7;
+  margin-bottom: 15px;
+  padding: 12px 6px 0px 6px;
+  color: #ff4800;
+  font-size: 15px;
+  font-family: 'Brandon Grotesque';
+}
+.sheets .row .more{
+  margin-top: 60px;
+}
+.sheets h6
+{
+  text-align: left;
+  padding-top: 5px;
+}
+.sheets .row .details
+{
+  text-align: right;
+  margin-right: 10px;
+}
+.details button
+{
+  border: none;
+  background: none;
+  color: #ff4800;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Brandon Grotesque';
+}
+.details a
+{
+  text-decoration: none;
+  color: #ff4800;
+}
+.details button,.details a
+{
+  margin-right: 40px;
+
+}
+@media (min-width:762px) and (max-width:850px)
+{
+  .details button,.details a
+  {
+    margin-right: 30px;
+
+  }
+}
+@media (max-width:762px)
+{
+  .details
+  {
+    padding-left: 50px;
+  }
+  .details button,.details a
+  {
+    margin-right: 20px;
+
+  }
+}
+@media (max-width:699px)
+{
+  .details
+  {
+    font-size: 12px;
+    padding-top: 7px;
+  }
+  .details button,.details a
+  {
+    margin-right: 10px;
+  }
+  .details button
+  {
+    font-size: 13px;
+  }
+  .row h6
+  {
+
+    margin-left:-12px;
+  }
+}
+@media (max-width:622px)
+{
+  .details
+  {
+    padding-left: 20px;
+  }
+  .details button,.details a
+  {
+    margin-right: 5px;
+  }
+}
+@media (max-width:562px)
+{
+  .details
+  {
+    padding-left: 5px;
+  }
+  .details button,.details a
+  {
+    margin-right: 5px;
+  }
+}
+@media (max-width:540px)
+{
+  .details
+  {
+    padding-left: 0px;
+  }
+.details span i
+{
+  display: none;
+}
+}
+/* end Assignments sheets*/
+
+
+/*******************=-  RATING SHEETs  @abdo_O  -=*************************/
+
+
+.courseRating .sheets
+{
+  margin: 5% 0 0 10%;
+  width: 73%;
+}
+/*.courseRating .sm-md-8
+{
+      width: 28%;
+}*/
+.courseRating .sheets .row
+{
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 15px;
+  padding: 12px 6px 10px 6px;
+  color: #ff4800;
+  font-size: 17px;
+  font-family: 'Brandon Grotesque';
+}
+.courseRating .sheets h6
+{
+  text-align: left;
+  padding-top: 11px;
+  font-size: 19px;
+}
+.courseRating .sheets .row .details
+{
+  text-align: left;
+  margin-right: 5%;
+  width: 220px;
+}
+.courseRating .details span
+{
+  color: #ff4800;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Brandon Grotesque';
+}
+.courseRating .details a
+{
+  text-decoration: none;
+  color: #ff4800;
+  margin-right: 40px;
+
+}
+
+/*****rates options*/
+.courseRating .ratesOption
+{
+  font-size: 12pt;
+  font-family: 'Brandon Grotesque Light';
+  margin-top: 100px
+
+}
+.courseRating .ratesOption .col-xs
+{
+  width: 90px;
+}
+.courseRating .ratesOption img
+{
+  margin-top: -17px
+}
+.courseRating .ratesOption a
+{
+    margin-right: 0px;
+}
+/* end of rates options */
+
+/*********************** resposive  */
+/* sheets */
+@media (max-width:575px)
+{
+  .courseRating .col-sm
+  {
+    width: 30%;
+  }
+
+  .ratesOption .row
+  {
+    width: 210px !important;
+  }
+
+}
+@media (max-width:762px)
+{
+  .courseRating .details
+  {
+    padding-left: 0px;
+  }
+  .courseRating .details a
+  {/*
+    margin-right: 10px;*/
+  }
+
+}
+
+@media (max-width:699px)
+{
+  .courseRating .details
+  {
+    width: 162px;
+  }
+  .courseRating .sheets
+  {
+    width: 90%;
+  }
+
+}
+@media (max-width:499px)
+{
+  .courseRating .sheets .row .details
+  {
+    width: 185px !important;
+
+  }
+
+}
+@media (max-width:425px)
+{
+.courseRating .sheets .row .details {
+    width: 145px !important;
+}
+.courseRating .details a {
+    margin-right: 4%;
+}
+}
+
+@media (max-width:339px)
+{
+.courseRating .sheets {
+    width: 100%;
+}
+}
+/* end of responsive*/
+/************************* End Of assigments Rating abdo_O *********************************/
+
+
+/* start courseMaterialsAll & courseMaterialsFiles Edited by moaaz_Eldesoky*/
+.materials
+{
+  margin: 5% 0 0 20%;
+}
+.materials .row
+{
+  border-top: 1px solid #e7e7e7;
+  margin-bottom: 15px;
+  padding: 12px 6px 0px 6px;
+  color: #ff4800;
+  font-size: 15px;
+  font-family: 'Brandon Grotesque';
+}
+
+.materials p
+{
+  color:#6d6d6d;
+  display: inline-block;
+}
+.materials .row .time-materials
+{
+  text-align: right;
+  margin-right: 10px;
+}
+.materials img
+{
+  max-height: 50px;
+  max-width: 50px;
+}
+.more a
+{
+  color: #ff4800;
+  text-decoration: none;
+  position: relative;
+  left: 80%;
+}
+.more a:first-of-type
+{
+  margin-right:20px;
+}
+.materials .row:last-of-type
+{
+  padding-top: 80px;
+}
+/*load more underline*/
+.more a:first-of-type:hover:after{
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: -3px;
+  background-color: #FF4800;
+  width: 50px;
+  height: 1px;
+  z-index: 2;
+}
+.more a:first-of-type:hover:before{
+  content: "";
+  position: absolute;
+  left: 17px;
+  bottom: -6px;
+  background-color: #FF4800;
+  width: 50px;
+  height: 1px;
+  z-index: 2;
+}
+/*old materials underline*/
+.more a:last-of-type:hover:after{
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -3px;
+  background-color: #FF4800;
+  width: 50px;
+  height: 1px;
+  z-index: 2;
+}
+.more a:last-of-type:hover:before{
+  content: "";
+  position: absolute;
+  left: 25px;
+  bottom: -6px;
+  background-color: #FF4800;
+  width: 50px;
+  height: 1px;
+  z-index: 2;
+}
+
+
+
+@media (max-width:576px)
+{
+  .time-materials
+  {
+    padding-left: 70%;
+  }
+}
+@media (max-width:375px)
+{
+  .time-materials
+  {
+    padding-left: 60%;
+  }
+}
+@media (max-width:288px)
+{
+  .time-materials
+  {
+    padding-left: 50%;
+  }
+}
+
+@media (max-width:900px)
+{
+  .more a
+  {
+    left: 70%;
+  }
+}
+@media (max-width:720px)
+{
+  .more a
+  {
+    left: 60%;
+  }
+}
+@media (max-width:600px)
+{
+  .more a
+  {
+    left: 50%;
+  }
+}
+@media (max-width:500px)
+{
+  .more a
+  {
+    left: 40%;
+  }
+}
+@media (max-width:420px)
+{
+  .more a
+  {
+    left: 30%;
+  }
+  .more a:first-of-type
+  {
+    margin-right:15px;
+  }
+}
+@media (max-width:350px)
+{
+  .more a
+  {
+    left: 0;
+    font-size: 12px;
+  }
+  .more a:first-of-type
+  {
+    margin-right:10px;
+  }
+}
+/* end Assignments sheets*/
+
+/*start course materials photos & Videos style*/
+.courseMaterialsPhotos .coursePhoto,.courseMaterialsVideos .courseVideo{
+  padding: 10px;
+  margin: 20px 0;
+}
+.courseMaterialsPhotos .coursePhoto img{
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.courseMaterialsPhotos .timeUploaded,.courseMaterialsVideos .timeUploaded{
+  float: right;
+  font-size: 14px;
+  color: #666;
+}
+.courseMaterialsPhotos  .UploadedBy,.courseMaterialsVideos  .UploadedBy{
+  font-size:14px;
+  color: #666;
+}
+.courseMaterialsVideos .courseVideo .courseTitle{
+  padding: 20px;
+  border: 1px solid #CCC;
+  position: relative;
+  height: 167px;
+  margin-bottom: 10px;
+}
+.courseMaterialsVideos .courseVideo .courseTitle .courseVideoName{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 20px 0 20px 10px;
+  color: #999;
+}
+.courseMaterialsVideos .courseVideo .courseTitle img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.courseMaterialsVideos .courseVideo .courseTitle i{
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+  font-size: 70px;
+  transform: rotate(180deg);
+  cursor: pointer;
+  color: #FF4800;
+  z-index: 3;
+}
+#videoModal{
+  z-index: 99999999999;
+}
+/*end course materials photos & Videos style*/
+/*start result created by moaaz_Eldesoky*/
+.report-problem textarea
+{
+  display: block;
+  margin-top: 150px;
+  width: 50%;
+  height: 150px;
+}
+.report-problem input
+{
+  width: 50%;
+  height: 50px;
+}
+/*End result*/
+/*start about-us*/
+.leadership-section h1
+{
+  text-align: center;
+  font-size: 80px;
+  color: #ff4800;
+}
+.double-cotation
+{
+  margin-bottom: 80px;
+}
+.leaders img
+{
+  width: 75%;
+  min-width:180px;
+}
+.leaders h5
+{
+    color: #898f9c;
+    margin-bottom: 12px;
+}
+.leaders p{
+  margin-bottom: 100px;
+  font-weight: 100;
+
+}
+
+@media (max-width:768px) {
+  .leaders img
+  {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:470px) {
+  .leaders h3
+  {
+    font-size: 25px;
+  }
+  .leaders h5
+  {
+    font-size: 18px;
+  }
+  .leaders p
+  {
+    font-size: 14px;
+  }
+  .leadership-section h1
+  {
+    font-size: 60px;
+  }
+}
+@media (max-width:399px) {
+  .leaders h3
+  {
+    font-size: 20px;
+  }
+  .leaders h5
+  {
+    font-size: 15px;
+  }
+  .leaders p
+  {
+    font-size: 13px;
+  }
+}
+@media (max-width:970px) {
+  .leader-content
+  {
+    padding-left: 60px;
+  }
+}
+/*End About-us*/
+
+
+
+/* videoPopup style */
+.fixeddelay{
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background: #f7f8fc;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    top: 126px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display:  none;
+}
+.fixeddelay .fa-close{
+  color: red;
+position: absolute;
+right: 70px;
+top: 25px;
+cursor: pointer
+}
+.videoPopup{
+    position: fixed;
+    z-index: 999999999999999999;
+    width: 524px;
+    background-color: white;
+    height: 263px;
+    top: 30%;
+    left: calc((100% - 524px) / 2);
+    box-shadow: 0px 0px 15px -3px #ddd;
+    border-radius: 4px;
+    margin-bottom: -43px;
+    margin-right: 59px;
+    border: 1px solid #ddd;
+    }
+
+.videoPopup i{    position: absolute;
+    top: 133px;
+    left: 232px; transition: all 2s ease-in-out}
+
+.videoPopup video{opacity: 1;transition: all .5s ease-in-out;transition-delay: 2s;}
+.video{
+  width: 305px;
+    height: 200px;
+    float: left;
+}

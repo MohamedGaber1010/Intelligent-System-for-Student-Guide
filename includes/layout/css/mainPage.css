@@ -1,0 +1,638 @@
+*{
+  box-sizing: border-box;
+}
+
+.error{
+    background: #ffcbcb;
+    color: black;
+    width: 50%;
+    margin: 0 auto;
+    border-left: 4px solid #f00;
+    padding: 8px 23px;
+}
+
+/* startmodal style */
+.modal{
+  overflow-y: scroll;
+}
+.modal-dialog{
+  max-width: 800px;
+  margin: 30px auto;
+}
+.modal-content{
+  border: 1px solid #ff4800;
+  position: relative;
+  border-radius: 0;
+}
+.modal-title{
+  background: #FF4800;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  margin: 20px auto;
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: bold;
+font-size: 30px;
+}
+.modal-header{
+  display: block;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.modal-header >p{
+  color: #FF4800;
+  font-size: 22px;
+}
+.modal-content .close{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #FF4800;
+  opacity: 1;
+  cursor: pointer;
+  width: 25px;
+  height: 30px;
+  color: #FFF;
+  transition: all .3s ease-in-out;
+}
+.modal-content .close:hover{
+  color: #666;
+}
+.modal-body .email,
+.modal-body .password,
+.modal-body .level,
+.modal-body .name{
+  margin: 20px auto;
+  width: 350px;
+  height: 45px;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  box-shadow: 1px 0px 3px 1px #ececec;
+  overflow: hidden;
+}
+.modal-body .email label,
+.modal-body .password label,
+.modal-body .level label,
+.modal-body .name label{
+  height: 100%;
+  color: #FF4800;
+  line-height: 41px;
+  width: 15%;
+  float: left;
+  font-size: 30px;
+}
+.modal-body .email label i,
+.modal-body .password label i,
+.modal-body .level label i,
+.modal-body .name label i{
+  box-shadow: 1px 10px 11px 1px #F5F5F5;
+}
+.modal-body .email input,
+.modal-body .password input,
+.modal-body .name input,
+.modal-body .level input{
+  width: 85%;
+  height: 100%;
+  padding: 10px 15px;
+  border: 0;
+  border-left: 1px solid #DDD;
+  color: #555;
+  outline-color: #FF4800;
+  font-size: 14px;
+}
+.modal-footer{
+  border: 0;
+  display: block;
+  padding-bottom: 40px;
+}
+.modal-footer >input{
+  color: #FFF;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  background: #FF4800;
+  border-radius: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+  text-align: center;
+  width: 220px;
+}
+.modal-footer .signup{
+  color: #555;
+  padding: 10px;
+}
+.modal-footer .signup button{
+  color: #FF4800;
+  background-color: #FFF;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+.modal-footer .signup button:hover{
+  cursor: pointer;
+  border-bottom: 1px solid #FF4800;
+}
+.modal-footer hr{
+  width: 25%;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: -12px;
+}
+@media (max-width:640px) {
+  .modal-title{
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+  }
+  .modal-header >p{
+    font-size: 20px;
+  }
+  .modal-body .email ,
+  .modal-body .password ,
+  .modal-body .name ,
+  .modal-body .level {
+    height: 40px;
+    width: 300px
+  }
+  .modal-body .email label,
+  .modal-body .password label,
+  .modal-body .level label,
+  .modal-body .name label{
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .modal-body .email input,
+  .modal-body .password input,
+  .modal-body .name input,
+  .modal-body .level input{
+    font-size: 13px;
+  }
+  .modal-footer >input{
+    width: 150px;
+  }
+
+}
+@media (max-width:380px){
+  .modal-body .email ,
+  .modal-body .password ,
+  .modal-body .name ,
+  .modal-body .level {
+    height: 40px;
+    width: 90%;
+  }
+  .modal-body .email label,
+  .modal-body .password label,
+  .modal-body .level label,
+  .modal-body .name label{
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+}
+@media (max-width:330px){
+  .register .login_button, .register .signup_button{
+    padding: 5px 25px !important;
+    font-size: 13px !important;
+  }
+  .logo img{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .logo{
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+/* end modal style */
+.affairs{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.affairs p{
+  font-size: 13px;
+}
+header nav {
+  display: flex;
+  background-color: #f9f9f9;
+  padding: 0 !important;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+
+}
+.logo img{
+  width: 60px;
+  height: 60px;
+}
+.register{
+  background-color: #FFF;
+  border-radius: 30px;
+  display: flex;
+}
+.register .login_button,.register .signup_button{
+  background: #FFF;
+  color: #666;
+  outline: 0;
+  text-align: center;
+  padding: 5px 30px;
+  margin: 0px;
+  border-radius: 30px;
+  transition: color .1s ease-in-out;
+  border: 1px solid #FF4800;
+  font-size: 15px;
+}
+.register .login_button:hover,.register .signup_button:hover{
+  background: #FF4800;
+  color: #FFF;
+  cursor: pointer;
+}
+.register .login_button{
+  background: #FF4800;
+  color: #FFF;
+  margin-right: -25px;
+  z-index: 1;
+}
+.register .signup_button:hover{
+  z-index: 2;
+}
+.home-body h2{
+  font-family: Raleway Medium;
+  text-align: center;
+  margin: 60px auto 90px;
+  color: #ff4800;
+  position: relative;
+}
+.home-body h2:after{
+  content: "";
+  position: absolute;
+  left: 47%;
+  bottom: -13px;
+  width: 70px;
+  height: 2px;
+  background-color: #FF4800;
+}
+.home-body h2:before{
+  content: "";
+  position: absolute;
+  left: 48%;
+  bottom: -17px;
+  width: 70px;
+  height: 2px;
+  background-color: #FF4800;
+}
+.home-body .container .nopadding{
+  padding: 0 !important;
+}
+.home-body .container .row >div{
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.home-body .container .row >div img{
+  position: absolute;
+  left: 40%;
+  top: -32px;
+}
+.home-body .container .row >div >div{
+  border: 1px solid #ddd;
+  height: 100%;
+  padding: 5px 20px;
+}
+.home-body .container .row >div >div h4{
+  padding: 45px 10px 10px;
+  font-size: 18px;
+}
+.home-body .container .row >div >div p{
+  font-size: 14px;
+  margin-bottom: 2    0px;
+}
+footer .about{
+  background-color: #f9f9f9;
+  margin-top: 100px;
+  padding: 20px 35px 20px 0;
+  font-size: 18px;
+  text-align: right;
+  position: relative;
+}
+footer .about a{
+  font-family: Raleway Medium;
+  color: #ff4800;
+  margin-bottom: -19px;
+  text-decoration: none;
+  position: relative;
+}
+footer .about a:after{
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  width: 45px;
+  height: 2px;
+  background-color: #FF4800;
+}
+footer .about a:before{
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 27px;
+  width: 45px;
+  height: 2px;
+  background-color: #FF4800;
+}
+.copy-right {
+  padding: 20px;
+  text-align: center;
+}
+.copy-right span {
+  color: #ff4800;
+}
+
+
+
+.attendance, .chat{
+    position: fixed;
+    right: 25px;
+    bottom: 40px;
+    z-index: 999999999999999999;
+    }
+.chat{right: 26px;bottom: 95px;}
+.chat .fa-close{display: none}
+.chat a{display: block;padding: 10px;display: none;text-decoration: none;}
+.attendance .attend, .users{
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    height: 120px;
+    padding-top: 46px;
+    display: none;
+    background-color: white;
+    width: 250px;
+    box-shadow: 0px 0px 15px -3px #ddd;
+    border-radius: 4px;
+    margin-bottom: -43px;
+    margin-right: 59px;
+    border: 1px solid #ddd;
+    }
+  .users{display: none;height: 282px;padding: 20px 30px;}
+.attendance .attend:after, .users:after{content: "";position: absolute;bottom: 12px;right: -10px;width: 0;height: 0;border-top: 10px solid transparent;border-bottom: 10px solid transparent;border-left: 10px solid #ddd;}
+.attendance .attend:before{transition: all .5s ease-in-out;padding-top: 46px;display:none; background-color: #f9f9f9;content: "Hide";position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.attendance .attend:hover p{opacity: 0}
+.attendance .attend:hover:before{display: block;    animation: dropDownAnimation .5s ease-in-out;
+    -webkit-animation: dropDownAnimation .5s ease-in-out;
+    -moz-animation: dropDownAnimation .5s ease-in-out;
+    -ms-animation: dropDownAnimation .5s ease-in-out;
+    -o-animation: dropDownAnimation .5s ease-in-out;
+}
+
+homePage.css:1
+* {
+    box-sizing: border-box;
+}
+mainPage.css:1
+* {}
+
+.attendance .attend p{color: #ff4800}
+.attendance i, .chat i{    float: right; color: white;
+    background-color: red;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: -4px -2px 4px 2px #ffd6d6; transition: all .5s ease-in-out;
+    cursor: pointer}
+ .chat i{
+   background-color: #3f3f3f;
+   box-shadow: none;
+   cursor: pointer;
+ }
+.attendance i:hover, .chat i:hover{
+  box-shadow: none;
+  transform: rotate(360deg)
+}
+
+
+i.fa-spinner{
+    float: none;
+    margin-top: -17px;
+    box-shadow: none;
+    background-color: white;
+    color: #ff5858;
+    font-size: 40px;
+}
+.users i.fa-spinner{margin-top: 63px;}
+.rotatespinner{
+  animation: rotatespinnerANIMATION .5s infinite;
+
+}
+
+
+
+
+@keyframes rotatespinnerANIMATION {
+  0%{
+    transform: rotate(0deg);
+  }
+  30%{
+    transform: rotate(60deg);
+  }
+  60%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+*{
+  box-sizing: border-box;
+}
+.modal-dialog{
+  max-width: 800px;
+  margin: 30px auto;
+}
+.modal-content{
+  border: 1px solid #ff4800;
+  position: relative;
+  border-radius: 0;
+}
+.modal-title{
+  background: #FF4800;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+  margin: 20px auto;
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: bold;
+font-size: 30px;
+}
+.modal-header{
+  display: block;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.modal-header >p{
+  color: #FF4800;
+  font-size: 22px;
+}
+.modal-content .close{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: #FF4800;
+  opacity: 1;
+  cursor: pointer;
+  width: 25px;
+  height: 30px;
+  color: #FFF;
+  transition: all .3s ease-in-out;
+}
+.modal-content .close:hover{
+  color: #666;
+}
+.modal-body .email,
+.modal-body .password,
+.modal-body .level,
+.modal-body .name{
+  margin: 20px auto;
+  width: 60%;
+  min-width: 250px;
+  height: 45px;
+  border: 1px solid #DDD;
+  border-radius: 10px;
+  box-shadow: 1px 0px 3px 1px #ececec;
+  overflow: hidden;
+}
+.modal-body .email label,
+.modal-body .password label,
+.modal-body .level label,
+.modal-body .name label{
+  height: 100%;
+  color: #FF4800;
+  line-height: 41px;
+  width: 15%;
+  float: left;
+  font-size: 30px;
+}
+.modal-body .email label i,
+.modal-body .password label i,
+.modal-body .level label i,
+.modal-body .name label i{
+  box-shadow: 1px 10px 11px 1px #F5F5F5;
+}
+.modal-body .email input,
+.modal-body .password input,
+.modal-body .name input,
+.modal-body .level input{
+  width: 85%;
+  height: 100%;
+  padding: 10px 15px;
+  border: 0;
+  border-left: 1px solid #DDD;
+  color: #AAA;
+  outline-color: #FF4800;
+  font-size: 14px;
+}
+.modal-footer{
+  border: 0;
+  display: block;
+  padding-bottom: 40px;
+}
+.modal-footer >input{
+  color: #FFF;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  background: #FF4800;
+  border-radius: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+  text-align: center;
+  width: 220px;
+}
+.modal-footer .signup{
+  color: #555;
+  padding: 10px;
+}
+.modal-footer .signup button{
+  color: #FF4800;
+  background-color: #FFF;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  transition: all .3s ease-in-out;
+}
+.modal-footer .signup button:hover{
+  cursor: pointer;
+  border-bottom: 1px solid #FF4800;
+}
+.modal-footer hr{
+  width: 25%;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  top: -12px;
+}
+
+.login_button,.signup_button{
+  background: #FFF;
+  color: #333;
+  outline: 0;
+  border:1px solid  #FF4800;
+  text-align: center;
+  padding: 10px 35px;
+  border-radius: 12px;
+  transition: all .3s ease-in-out;
+}
+.login_button:hover,.signup_button:hover{
+  background: #FF4800;
+  color: #FFF;
+  cursor: pointer;
+}
+/* doctor comment */
+
+/* General scroll*/
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(167, 167, 167, .3);
+	border-radius: 5px;
+	background-color: #f0f0f2;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #f0f0f2;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(167, 167, 167, .3);
+	background-color: #FF4800;
+}
+/*End Genral scroll*/
+
+.view-dr-comment{
+    border: 0;
+    outline: 0;
+    background: #FFF;
+    text-decoration: none;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.dr-comment{
+     text-align:  center;
+     text-transform:  capitalize;
+     color: #0e8a0e;
+     padding: 20px;
+     font-size: 20px;
+}
